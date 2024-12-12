@@ -21,6 +21,10 @@ namespace firm
             this.possibleCase = possibleCase;
         }
 
+
+        /// <summary>
+        /// проверка на возможность передачи задания
+        /// </summary>
         public bool IsCaseAvailable(Case task)
         {
             Employee appointer = task.appointer;

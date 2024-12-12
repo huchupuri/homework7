@@ -25,18 +25,22 @@ namespace managers
             Employee ildar = new Employee("Ильдар", lyaysan, CaseType.devOps);
             Employee anton = new Employee("Антон", lyaysan, CaseType.devOps);
 
-            Case task1 = new Case(CaseType.sys, sergey);
-            Case task2 = new Case(CaseType.devOps, dina);
-            Case task3 = new Case(CaseType.management, ilham);
+            Case task1 = new Case("реализовать сеть", CaseType.devOps, timur);
+            Case task2 = new Case("разработать что-то", CaseType.sys, zhenya);
+            Case task3 = new Case("пораспределять что-то", CaseType.management, anton);
 
             Check(sergey, task1);
-            Check(lyaysan, task2);
-            Check(orkadiy, task3);
+            Check(vitya, task2);
+            Check(timur, task3);
         }
+
+        /// <summary>
+        /// проверка на возможность передачи задания
+        /// </summary>
         static void Check(Employee employee, Case task)
         {
             Console.WriteLine(employee.IsCaseAvailable(task) ?
-            $"{employee.name} берет задачу." : $"{employee.name} не берет задачу.");
+            $"{employee.name} берет задачу: {task.title}." : $"{employee.name} не берет задачу: {task.title}.");
         }
     }
 }
