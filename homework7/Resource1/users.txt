@@ -1,0 +1,5 @@
+Иванов Иван Иванович # ivanov@mail.ru
+Петров Петр Петрович # petrov@gmail.com
+Сидоров Сидор Сидорович # sidorov@yahoo.com
+Кузнецов Николай Николаевич # kuznetsov@outlook.com
+Фёдоров Фёдор Фёдорович # fedorov@company.org
