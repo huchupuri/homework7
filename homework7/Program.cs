@@ -60,7 +60,7 @@ namespace homework7
         }
         static void Task2()
         {
-            Console.WriteLine("задание 2\n");
+            Console.WriteLine("\nзадание 2\n");
 
             Console.Write("введите строку: ");
 
@@ -69,7 +69,7 @@ namespace homework7
 
         static void Task3()
         {
-            Console.WriteLine("задание 3");
+            Console.WriteLine("\nзадание 3\n");
             Console.Write("введите название файла: ");
             string fileName = Console.ReadLine();
             if (File.Exists($"Resource1\\{fileName}.txt"))
@@ -91,6 +91,7 @@ namespace homework7
 //в строковое представление.)
         static void Task4()
         {
+            Console.WriteLine("\nзадание 4\n");
             object value1 = 123.45; 
             object value2 = "Hello";
             object value3 = true;
@@ -110,6 +111,7 @@ namespace homework7
 //адрес.Разделителем между ФИО и адресом электронной почты является символ #:
         static void Task5()
         {
+            Console.WriteLine("\nзадание 5\n");
             Console.Write("Введите имя входного файла (users): ");
             string fileName = Console.ReadLine();
 
